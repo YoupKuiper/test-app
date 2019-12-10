@@ -3,16 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-
-  let env = process.env.ENV;
-  console.log(env);
+  console.log(process.env.REACT_APP_ENV);
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {env}
+          {process.env.REACT_APP_ENV}
         </p>
         <a
           className="App-link"
